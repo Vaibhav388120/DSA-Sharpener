@@ -25,3 +25,5 @@
 // let part=text.replace("vaibhav","kashinath");
 // console.log(part);
 
+//replaceAll, split, convert to array
+
