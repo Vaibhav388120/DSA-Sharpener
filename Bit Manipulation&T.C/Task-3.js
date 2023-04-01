@@ -18,3 +18,21 @@ while(num>0){
     num=parseInt(num/16);
 }
 console.log(res);
+
+//2nd approach
+
+if(num===0){
+    return "0";
+}
+let str="",temp;
+while(num!==0){
+    temp=num&15;
+    if(temp>9){
+        str=`${String.fromCharCode(temp+87)}${str}`;
+    }
+    else{
+        str=`${temp}${str}`;
+    }
+    num=num>>4;
+}
+console.log(str);
