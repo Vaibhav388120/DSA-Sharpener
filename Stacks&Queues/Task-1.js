@@ -5,7 +5,7 @@ class Stack{
         this.index=-1;
     }
     push(element){
-        if(this.index===this.size){
+        if(this.index===this.size-1){
             return false;
         }
         this.index++;
